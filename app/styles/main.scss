@@ -19,6 +19,11 @@ $icon-font-path: '../fonts/';
   src: url('/fonts/Dosis-Medium.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'dosis-light';
+  src: url('/fonts/Dosis-Light.ttf') format('truetype')
+}
+
 h5 {
   font-family: 'dosis-reg';
   color: #292E2F;
@@ -41,6 +46,24 @@ h2, a, p {
 
 strong {
   font-family: 'dosis-semi-bold';
+}
+
+.hide-demo {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+}
+
+.show-demo {
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
 }
 
 .browserupgrade {
@@ -80,12 +103,10 @@ strong {
 
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
-  color: #777;
   border-top: 1px solid #e5e5e5;
   background: #101010;
-  height: 100px;
-  padding-top: 40px;
+  height: 70px;
+  padding-top: 24px;
   p {
     display: inline-block;
     color: #FD4F00;
@@ -95,8 +116,9 @@ strong {
   }
   a {
     margin-left: 10px;
+    color: #9a9a9a;
     &:hover {
-      color: #549594 !important;
+      color: #fff !important;
     }
   }
 }
@@ -151,7 +173,7 @@ a {
 }
 
 .cloud-section, .crm-section {
-  background: #E7E7E7;
+  background: url('/images/gray-bg.png');
   text-align: center;
 }
 
@@ -181,6 +203,7 @@ a {
     h4 {
       max-width: 500px;
       margin: 20px auto;  
+      font-family: 'dosis-light';
     }
     .cloud {
       margin: 20px 0;
@@ -253,12 +276,15 @@ a {
     max-width: 1200px;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+    p {
+      position: relative;
+      left: -30px;
+    }
+    .terms {
+      position: relative;
+      right: -30px;
+    }
   }
 
   /* Space out the masthead */
@@ -354,4 +380,50 @@ a {
   }
 }
 
-
+.demo-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding-top: 100px;
+  .demo-form {
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 350px;
+    color: #000;
+    background-color: #F2F2F2;
+    padding: 20px 50px;
+    // margin-top: 40px;
+    // max-height: 400px;
+    .info p {
+      margin-bottom: 20px;
+    }
+    form {
+      h2 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      padding: 0px;
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
+      .form-input input, .form-input textarea {
+        font-family: 'dosis-light';
+        border-radius: 4px;
+        padding: 10px 16px;
+        border: 1px solid rgba(157, 157, 157, 0.5);
+        width: 100% !important;
+        margin-bottom: 20px;
+      }
+      .button {
+        font-family: 'dosis-reg';
+        border: none;
+        width: 100%;
+        margin-top: 0px;
+      }
+    }
+  }
+}

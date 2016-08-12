@@ -22,11 +22,16 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <style>
-
-          /* Ensure elements load hidden before ScrollReveal runs */
-          .cloud-section .container .cloud { visibility: hidden; }
-
-        </style>
+        /* Ensure elements load hidden before ScrollReveal runs */
+      .cloud-section .container { visibility: hidden; }
+      .cloud-section .container { visibility: hidden; }
+      .ip-section .ip-group { visibility: hidden; }
+      /*.demo-container { visibility: hidden; }*/
+    </style>
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.14465" type="text/javascript"></script>
+    <script type="text/javascript"> JotForm.init(function(){ JotForm.clearFieldOnHide="disable"; JotForm.onSubmissionError="jumpToFirstError"; });
+    </script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -64,21 +69,21 @@
               <div class="ip-group">
                 <img src="/images/fund-data-icon.png">
                 <h3>Fund Data</h3>
-                <p>Investors can easily view funds, capital commitments, capital calls, distributions, and capital accounts in clear dashboard views as well as drilling down into more detailed views.</p>
+                <p>Investors can easily view funds, capital commitments, capital calls, distributions, and capital accounts in clear dashboard views.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="ip-group">
                 <img src="/images/docs-icon.png">
                 <h3>Documents</h3>
-                <p>Provides a centralized location to access documents 24/7 in the cloud. Easily upload and organize documents by fund, investment vehicle, document type, and date.</p>
+                <p>Provide investors with a centralized and secure location to access their documents 24/7 in the cloud. Easily upload and organize documents by fund, investment vehicle, document type, and date.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="ip-group">
                 <img src="/images/fundraising-icon.png">
                 <h3>Fundraising</h3>
-                <p>Securely share prior and current fund performance with new prospects. Improve investor relations by providing a professional, interactive portal experience.</p>
+                <p>Securely share prior and current fund performance with new prospects.</p>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
@@ -121,7 +126,8 @@
             </div>
             <div class="col-xs-12 col-md-4">
               <div class="crm-box">
-                <p><strong>Manage</strong> all investor information and advisor contact information and roles.</p>
+                <p><strong>Manage</strong> all investor/advisor contact information and roles</p>
+                <br>
                 <hr>
                 <img src="/images/manage-infographic.png">
               </div>
@@ -136,7 +142,7 @@
           </div>
           <div class="col-xs-12 learn-more">
             <h4>Want to learn more?</h4>
-            <div class="button"><a href="mailto:contact@aduroconnect.com?subject=Demo Request">Request a Demo</a></div>
+            <div class="button demo-button">Request a demo</div>
           </div>
         </div>
       </div>
@@ -150,6 +156,56 @@
             <a target="_blank" href="http://www.salesforce.com/company/privacy/">Privacy Policy</a>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Change the width and height values to suit you best -->
+    <div class="demo-container hide-demo">
+      <div class="demo-form">
+        <form class="jotform-form" action="https://submit.jotform.us/submit/62237943062152/" method="post" name="form_62237943062152" id="62237943062152" accept-charset="utf-8"> 
+          <input type="hidden" name="formID" value="62237943062152" /> 
+          <div class="form-all"> <ul class="form-section page-section"> 
+            <li id="cid_1" class="form-input-wide" data-type="control_head"> 
+              <div class="form-header-group"> 
+                <div class="header-text httal htvam"> 
+                  <h2 id="header_1" class="form-header">Request Demo</h2> 
+                </div> 
+              </div> 
+            </li> 
+            <li class="form-line" data-type="control_textbox" id="id_5"> 
+              <div id="cid_5" class="form-input jf-required"> 
+                <input placeholder="Name" type="text" class=" form-textbox" data-type="input-textbox" id="input_5" name="q5_name" value=""/> 
+              </div> 
+            </li> 
+            <li class="form-line" data-type="control_email" id="id_3"> 
+              <div id="cid_3" class="form-input jf-required"> 
+                <input placeholder="Email" type="email" class=" form-textbox validate[Email]" id="input_3" name="q3_email" value=""/> 
+              </div> 
+            </li> 
+            <li class="form-line" data-type="control_textbox" id="id_6"> 
+              <div id="cid_6" class="form-input jf-required"> 
+                <input placeholder="Firm Name" type="text" class=" form-textbox" data-type="input-textbox" id="input_6" name="q6_firmName" value=""/> 
+              </div> 
+            </li> 
+            <li class="form-line" data-type="control_textarea" id="id_4"> 
+              <div id="cid_4" class="form-input jf-required"> 
+                <textarea placeholder="Message(optional)" id="input_4" class="form-textarea" name="q4_messageoptional"></textarea> 
+              </div> 
+            </li> 
+            <li class="form-line" data-type="control_button" id="id_2"> 
+              <div id="cid_2" class="form-input-wide"> 
+                <div class="form-buttons-wrapper"> 
+                  <button id="input_2" type="submit" class="form-submit-button button"> Submit </button> 
+                </div> 
+              </div> 
+            </li> 
+            <li style="display:none"> Should be Empty: 
+              <input type="text" name="website" value="" /> 
+            </li> 
+          </ul> 
+        </div> 
+        <script> JotForm.showJotFormPowered = true; </script> <input type="hidden" id="simple_spc" name="simple_spc" value="62237943062152" /> <script type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "62237943062152-62237943062152"; </script>
+        </form>
+        <script type="text/javascript">JotForm.ownerView=true;</script>
       </div>
     </div>
     

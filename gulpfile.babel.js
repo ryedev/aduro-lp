@@ -49,15 +49,15 @@ const testLintOptions = {
   }
 };
 
-gulp.task('lint', lint('app/scripts/**/*.js'));
-gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
+// gulp.task('lint', lint('app/scripts/**/*.js'));
+// gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cssnano()))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    // .pipe($.if('*.js', $.uglify()))
+    // .pipe($.if('*.css', $.cssnano()))
+    // .pipe($.if('*.html'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -146,7 +146,6 @@ gulp.task('serve:test', ['scripts'], () => {
 
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('test/spec/**/*.js').on('change', reload);
-  gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
 
 // inject bower components
@@ -165,7 +164,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
