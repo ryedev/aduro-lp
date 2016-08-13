@@ -22,7 +22,14 @@ $(document).ready(function(){
     duration: 1500,
   });
   sr.reveal('.cloud-section .container', {
-    delay: 500,
+    delay: 200,
+    viewFactor: 0.4,
+    origin: 'top',
+    distance: '0px',
+    duration: 1500,
+  });
+  sr.reveal('.cloud-section .subhead', {
+    delay: 200,
     viewFactor: 0.4,
     origin: 'top',
     distance: '0px',

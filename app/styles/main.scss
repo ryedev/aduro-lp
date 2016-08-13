@@ -95,6 +95,44 @@ strong {
     line-height: 40px;
     padding-bottom: 19px;
   }
+  h1 {
+    color: #fff;  
+    margin-top: 60px;
+    @media only screen {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 36px;
+      margin-top: 70px;
+    }
+  }
+}
+.thanks-header {
+  border-bottom: 1px solid #e5e5e5;
+  background: url('/images/hero-image.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  /* Make the masthead heading the same height as the navigation */
+  h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  h1 {
+    color: #fff;  
+    margin-top: 60px;
+    @media only screen {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    @media only screen and (min-width: 768px) {
+      font-size: 36px;
+      margin-top: 70px;
+    }
+  }
 }
 
 .container {
@@ -158,8 +196,18 @@ strong {
     background: #449194;
     cursor: pointer;
   }
+  &.xl {
+    padding: 12px 18px ;
+    font-size: 22px;
+    width: 300px;
+    margin-top: 60px;
+    text-align: center;
+  }
 }
 
+.thanks-back {
+  text-align: center; 
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -198,8 +246,26 @@ a {
       }
     }
   }
+  .thanks-header {
+    height: 160px;
+    padding-top: 16px;
+    h2 {
+      font-size: 17px;
+    }
+    .logo {
+      margin: 30px auto 0;
+      img {
+        width: 66%;
+        max-width: 220px;
+      }
+    }
+  }
   .cloud-section {
     padding: 20px 0;
+    .sub-tag {
+      font-family: 'dosis-semi-bold';
+      font-size: 22px;
+    }
     h4 {
       max-width: 500px;
       margin: 20px auto;  
@@ -309,13 +375,37 @@ a {
     }
   }
 
+  .thanks-header {
+    height: 430px;
+    padding-top: 30px;
+    h2 {
+      font-size: 28px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      width: 510px;
+      margin: 120px auto 0;
+      height: 70px;
+      text-align: center;
+      img {
+        width: auto;
+        max-width: 98%;
+      }
+    }
+  }
+
   .cloud-section {
     padding-top: 60px;
     padding-bottom: 30px;
+    .sub-tag {
+      font-size: 28px;
+    }
     h4 {
       font-size: 22px;
       width: 80%;
-      max-width: 640px;
+      max-width: 880px;
       margin: 0 auto 40px;
       text-align: center;
       line-height: 26px;
@@ -387,7 +477,7 @@ a {
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
-  padding-top: 100px;
+  padding-top: 60px;
   .demo-form {
     border-radius: 4px;
     margin: 0 auto;
@@ -427,3 +517,4 @@ a {
     }
   }
 }
+
